@@ -65,6 +65,16 @@ function Login() {
                         unique: true
                     })}
                 />
+                <Input 
+                    label="Password: "
+                    placeholder="Enter your password"
+                    type="password"
+                    {...register("password", {
+                        required: true,
+                        minLength: 6
+                    })}
+                />
+                <Button type='submit' className='w-full'>Sign Up</Button>
             </div>
         </form>
       </div>
