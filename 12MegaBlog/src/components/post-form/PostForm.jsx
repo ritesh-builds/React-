@@ -64,13 +64,11 @@ function PostForm({post}) {
     }, [])
 
     React.useEffect(() => {
-        const subscription = watch((value, {name}) => {
+        const subscription = watch((value, {name}) => { 
             if (name === "title"){
                 setValue("slug", slugTransform(value.title), {shouldValidate: true})
             }
         })
-
-
         return () => {
             subscription.unsubscribe()
         }

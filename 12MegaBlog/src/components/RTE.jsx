@@ -1,6 +1,6 @@
 import React from 'react'
 import {Editor} from '@tinymce/tinymce-react'
-import {contrtoler} from 'react-hook-form'
+import {Controller} from 'react-hook-form'
 
 // RTE Real time editor...
 export default function RTE({name, control, label, placeholder,defaultValue = ""}) {
